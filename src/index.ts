@@ -15,6 +15,10 @@ const main = async () => {
 
 
     // get data in prisma
+
+    const getAllDataFromDb = await prisma.post.findMany()
+
+    console.log(getAllDataFromDb);
 }
 
 main()
